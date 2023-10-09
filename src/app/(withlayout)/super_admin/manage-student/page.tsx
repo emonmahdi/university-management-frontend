@@ -2,6 +2,8 @@
 
 import UMBreadCrumb from "@/components/ui/UMBreadCrumb";
 import { getUserInfo } from "@/services/auth.service";
+import { Button } from "antd";
+import Link from "next/link";
 import React from "react";
 
 const ManageStudentPage = () => {
@@ -17,6 +19,9 @@ const ManageStudentPage = () => {
         ]}
       />
       <h1>Manage Student Page</h1>
+      <Link href="/super_admin/manage-student/create">
+        <Button>Create Student</Button>
+      </Link>
     </div>
   );
 };
